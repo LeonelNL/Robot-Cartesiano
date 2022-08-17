@@ -20,11 +20,13 @@ void Triangulo()
       for(a; a > 1; a--)
       {
         Down();
+        
         if(b > 9200)
         {
            In();
            b--;
         }
+        
         itoa(b/2200, c, 15);
         str_2 = c;
         itoa(a/1100, c, 15);
@@ -35,13 +37,21 @@ void Triangulo()
       for(int f = 0; f < 22000; f++) 
       {
         Left();
+        
         if(f > 21950)
         {
-          In();
+           In();
         }
+        
         itoa(f/1100, c, 10);
         str_3 = c;
         Serial.println(str_3 + '?' + str_1 + '?' + str_2);
+      }
+//**************Subir un puco Z*****************************
+      for(int l = 0; l < 1250; l++)
+      {
+        In();
+        Serial.println(l);
       }
 
 //*************MOVER LOS TRES EJES******************************************
@@ -56,9 +66,10 @@ void Triangulo()
         
         if(b <= 19950)
         {
-          Out();
-          b++;
+            Out();
+            b++;
         }
+        
         itoa(f/1100, c, 10);
         str_3 = c;
         itoa(b/2200, c, 10);
@@ -68,7 +79,7 @@ void Triangulo()
         Serial.println(str_3 + '?' + str_1 + '?' + str_2);
       }
 //********************REGRESAR Z**********************************************
-      for(b; b > 200; b--) //Solo para regresa Z
+      for(b; b > 1100; b--) //Solo para regresa Z
       {
         In();
         itoa(b/2200, c, 10);
