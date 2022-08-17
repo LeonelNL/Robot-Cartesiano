@@ -5,7 +5,7 @@ int CordenadaX, CordenadaY, CordenadaZ;
 int CmToPasosX = 0, CmToPasosY = 0, CmToPasosZ = 0;
 String str_1,str_2, str_3;
 char c[20];
-int d = 0, h = 0, n = 0, a=0, b=0, f=0;
+int d = 0, h = 0, n = 0, a = 0, b = 0, f = 0, g = 0, l = 0;
 int q, w, r = 0;
 int ENAX = 3, ENAY = 2, ENAZ = 1;  
 int PULX = 6, PULY = 5, PULZ = 4; //Pin Pul
