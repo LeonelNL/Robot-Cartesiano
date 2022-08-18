@@ -56,7 +56,7 @@ void SerialCasos()
           break;
 
         case 9:
-
+          HomeVariables();
           break;
 
         case 10:

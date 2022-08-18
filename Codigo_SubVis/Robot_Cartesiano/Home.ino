@@ -41,3 +41,28 @@ void Home()
     }
   }
 }
+
+void HomeVariables()
+{
+  for(r; r > 1; r--)
+  {
+    In();
+    itoa(r/2200, c, 10);
+    str_3 = c;
+    Serial.println(str_1 + '?' + str_2 + '?' + str_3);
+  }
+  for(q; q > 1; q--)
+  {
+    Down();
+    itoa(q/1100, c, 10);
+    str_2 = c;
+    Serial.println(str_1 + '?' + str_2 + '?' + str_3);
+  }
+  for(d; d > 1; d--)
+  {
+    Right();
+    itoa(d/1100, c, 10);
+    str_1 = c;
+    Serial.println(str_1 + '?' + str_2 + '?' + str_3);
+  }
+}
