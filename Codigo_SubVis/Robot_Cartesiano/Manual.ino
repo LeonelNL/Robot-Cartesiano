@@ -84,3 +84,95 @@ void Manual()
         }
    } 
 }
+
+
+//***********************Manual con botones***********************
+void ManualRight()
+{
+  for(d; d > 1; d--)
+  {
+    if(Serial.read() == 'X')
+    {
+       break;
+    }
+    Right();
+    itoa(d/1100, c, 10);
+    str_1 = c;
+    Serial.println(str_1 + '?' + str_2 + '?' + str_3);
+  }
+}
+
+void ManualLeft()
+{
+  for(d; d < 23000; d++)
+  {
+    if(Serial.read() == 'X')
+    {
+       break;
+    }
+    Left();
+    itoa(d/1100, c, 10);
+    str_1 = c;
+    Serial.println(str_1 + '?' + str_2 + '?' + str_3);
+  }
+}
+
+void ManualUp()
+{
+  for(q; q < 12100; q++)
+  {
+    if(Serial.read() == 'X')
+    {
+       break;
+    }
+    Up();
+    itoa(q/1100, c, 10);
+    str_2 = c;
+    Serial.println(str_1 + '?' + str_2 + '?' + str_3);
+  }
+}
+
+void ManualDown()
+{
+  for(q; q > 1; q--)
+  {
+    if(Serial.read() == 'X')
+    {
+       break;
+    }
+    Down();
+    itoa(q/1100, c, 10);
+    str_2 = c;
+    Serial.println(str_1 + '?' + str_2 + '?' + str_3);
+  }
+}
+
+void ManualOut()
+{
+  for(r; r < 19700; r++)
+  {
+    if(Serial.read() == 'X')
+    {
+       break;
+    }
+    Out();
+    itoa(r/2200, c, 10);
+    str_3 = c;
+    Serial.println(str_1 + '?' + str_2 + '?' + str_3);
+  }
+}
+
+void ManualIn()
+{
+  for(r; r > 1; r--)
+  {
+    if(Serial.read() == 'X')
+    {
+       break;
+    }
+    In();
+    itoa(r/2200, c, 10);
+    str_3 = c;
+    Serial.println(str_1 + '?' + str_2 + '?' + str_3);
+  }
+}

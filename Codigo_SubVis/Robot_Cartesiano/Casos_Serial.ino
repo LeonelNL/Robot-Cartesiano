@@ -25,42 +25,38 @@ void SerialCasos()
     switch(InstruccionINT){
         case 1:
           Home();
-
         break;
 
         case 2:
-
-          
+          Botones();
         break;
 
         case 3:
-
+          ManualRight();
           break;
 
         case 4:
-
+          ManualLeft();
           break;
 
         case 5:
-
+          ManualUp();
           break;
 
         case 6:
-
+          ManualDown();
           break;
 
         case 7:
-
+          ManualIn();
           break;
 
         case 8:
-          Pause = 0;
-          Manual();
-       
+          ManualOut();
           break;
 
         case 9:
-          
+
           break;
 
         case 10:
@@ -69,7 +65,8 @@ void SerialCasos()
           break;
 
         case 11:
-          TrianguloRegresar();
+          Pause = 0;
+          Manual();
           break;
         
         case 12:

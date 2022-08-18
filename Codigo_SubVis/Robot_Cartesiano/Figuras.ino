@@ -143,9 +143,3 @@ void Triangulo()
       }
    }
 }
-
-
-void TrianguloRegresar()
-{
-  
-}
